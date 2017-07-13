@@ -16,8 +16,6 @@ RUN apk update && \
 # Create unprivileged user
 RUN adduser -S service
 
-MAINTAINER NHS Digital Delivery Centre, CIS Team. Email: HSCIC.DL-CIS@nhs.net
-
 ENV PYLINT_VERSION=1.6.4
 
 RUN pip3 install pylint==$PYLINT_VERSION && \
