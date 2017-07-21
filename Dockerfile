@@ -31,5 +31,4 @@ RUN pip3 install pylint==$PYLINT_VERSION && \
     pip3 install pyhcl && \
     pip3 install docker && \
     pip3 install sqlalchemy && \
-    pip3 install tqdm && \
-    pip3 install lxml
+    pip3 install tqdm 
