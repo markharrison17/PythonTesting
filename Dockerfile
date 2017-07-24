@@ -32,6 +32,4 @@ RUN pip3 install pylint==$PYLINT_VERSION && \
     pip3 install docker && \
     pip3 install sqlalchemy && \
     pip3 install tqdm && \
-    pip3 install libxml2-dev && \
-    pip3 install libxslt1-dev && \
-    pip3 install lxml
+    STATIC_DEPS=true pip3 install lxml
