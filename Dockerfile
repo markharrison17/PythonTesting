@@ -33,4 +33,5 @@ RUN pip3 install pylint==$PYLINT_VERSION && \
     pip3 install sqlalchemy && \
     pip3 install tqdm && \
     pip3 install libxml2-dev libxslt1-dev zlib1g-dev && \
+    apk add --update --no-cache g++ gcc libxslt-dev && \
     STATIC_DEPS=true pip3 install lxml
