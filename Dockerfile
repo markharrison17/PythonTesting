@@ -1,4 +1,4 @@
-FROM alpine:3.4
+FROM alpine:3.6
 
 MAINTAINER NHS Digital Delivery Centre, CIS Team. Email: HSCIC.DL-CIS@nhs.net
 
@@ -33,7 +33,7 @@ RUN pip3 install pylint==$PYLINT_VERSION && \
     pip3 install sqlalchemy && \
     pip3 install tqdm && \
     apk update && \
-    apk add install py3-lxml && \
+    apk add py-lxml && \
     pip3 install lxml
 
 #    apk add install python-dev libxml2-dev libxslt1-dev zlib1g-dev && \
