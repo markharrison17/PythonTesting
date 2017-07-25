@@ -32,8 +32,6 @@ RUN pip3 install pylint==$PYLINT_VERSION && \
     pip3 install docker && \
     pip3 install sqlalchemy && \
     pip3 install tqdm && \
-    apk --no-cache add --repository http://dl-cdn.alpinelinux.org/alpine/edge/main libseccomp && \
-    apk --no-cache add --repository http://dl-cdn.alpinelinux.org/alpine/edge/community docker && \
     apk update && \
     apk add install py3-lxml && \
     pip3 install lxml
